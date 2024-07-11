@@ -1,0 +1,27 @@
+﻿@model List<DI_Real_Application_Example.Models.StudentsModel>
+
+<h2>Science Students</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Class</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (StudentsModel student in ViewBag.Students)
+        {
+            <tr>
+                <td>@student.Id</td>
+                <td>@student.Name</td>
+                <td>@student.Age</td>
+                <td>@student.Grade</td>
+                <td>@student.Class</td>
+            </tr>
+        }
+    </tbody>
+</table>
